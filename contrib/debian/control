@@ -197,7 +197,7 @@ Recommends: openzfs-zfs-zed, openzfs-zfsutils (>= ${source:Version}), ${linux:Re
 Suggests: debhelper
 Breaks: spl-dkms (<< 0.8.0~rc1)
 Replaces: spl-dkms, zfs-dkms
-Provides: openzfs-zfs-modules
+Provides: openzfs-zfs-modules, zfs-dkms
 Description: OpenZFS filesystem kernel modules for Linux
  OpenZFS is a storage platform that encompasses the functionality of
  traditional filesystems and volume managers. It supports data checksums,
@@ -262,7 +262,7 @@ Conflicts: zfs, zfs-fuse, zfsutils-linux
 Suggests: nfs-kernel-server,
           samba-common-bin (>= 3.0.23),
           openzfs-zfs-initramfs | openzfs-zfs-dracut
-Provides: openzfsutils
+Provides: openzfsutils, zfsutils-linux
 Description: command-line tools to manage OpenZFS filesystems
  OpenZFS is a storage platform that encompasses the functionality of
  traditional filesystems and volume managers. It supports data checksums,
@@ -281,6 +281,7 @@ Depends: openzfs-zfs-modules | openzfs-zfs-dkms,
          ${shlibs:Depends}
 Conflicts: zfs, zfs-zed
 Replaces: zfs-zed
+Provides: zfs-zed
 Description: OpenZFS Event Daemon
  OpenZFS is a storage platform that encompasses the functionality of
  traditional filesystems and volume managers. It supports data checksums,
