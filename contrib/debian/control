@@ -102,6 +102,7 @@ Recommends: libcurl4
 Breaks: libzfs2, libzfs4, libzfs4linux, libzfs6linux
 Replaces: libzfs2, libzfs4, libzfs4linux, libzfs6linux
 Conflicts: libzfs6linux
+Provides: libzfs4linux
 Description: OpenZFS filesystem library for Linux - general support
  OpenZFS is a storage platform that encompasses the functionality of
  traditional filesystems and volume managers. It supports data checksums,
